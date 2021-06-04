@@ -1181,7 +1181,7 @@
    .branding .site-title {
      color: #8f7655;
      font-size: 14px;
-     font-size: 1em; 
+     font-size: 2em; 
      position: center
    }
  
@@ -1553,8 +1553,8 @@
    min-height: 150px; }
  
 .Pastor {
-    width: 354px;
-    height: 280px;
+    width: 177px;
+    height: 140px;
     transform: scaleX(-1);
     position: center;
   }
@@ -1563,5 +1563,4 @@
     width: 28px;
     height: 28px;
     float: 20px inline-start;
-    position: relative;
 }

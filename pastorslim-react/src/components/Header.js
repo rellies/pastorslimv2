@@ -1,52 +1,49 @@
 //Packages
 import React from 'react';
-import "./App.css"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  }  from "react-router-dom";
+import "./../App.css"
+import { BrowserRouter as Router, Switch, Route, Link }  from "react-router-dom";
 
 //Components
-import Contribute from "./components/Contribute";
-import Pastors from "./components/Pastors";
-import Sermons from "./components/Sermons";
-import Events from "./components/Events";
+import Home from "./Home";
+import Contribute from "./Contribute";
+import Pastors from "./Pastors";
+import Sermons from "./Sermons";
+import Events from "./Events";
+//import DiscordAuth from "./../api/discord_auth"
+
+//Images
+import Pastor from "./../images/PastorPls.gif";
+import DiscordLogo from "./../images/Discord-Logo-White.png";
 
 
 function Header() {
     return(
         <Router>
             <header class="site-header">
-                    <div class="container">
+                    <nav class="main-navigation">
+                        <div class="container">
                         <a href="#" class="branding">
-                            <img src="images/PastorPls.gif" class="Pastor" alt="PastorPls" />
+                            <img src={Pastor} class="Pastor" alt="PastorPls" />
                             <h1 class="site-title">Pay your God Tax, ya he-bitch!</h1>
                         </a>
-
-                        <div class="main-navigation">
-                            <button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
-                            <ul class="menu">
-                                <li class="menu-item current-menu-item"><a href="index.html">Home<small></small></a></li>
-                                <li class="menu-item"><a href="pastors.html">Pastors <small></small></a></li>
-                                <li class="menu-item"><a href="sermons.html">Sermons<small></small></a></li>
-                                <li class="menu-item"><a href="events.html">Events <small></small></a></li>
-                                <li class="menu-item"><a href="contribute.html">Contribute<small></small></a></li>
-                                <li class="menu-item"><a href="#">Contact <small></small></a></li>
-                                <li class="menu-item"><img class="DiscordLogo" src="images/Discord-Logo-White.png"></img><a href="/api/discord_auth/login">Login</a></li>
-                            </ul>
                         </div>
-
-                        <div class="mobile-navigation"></div>
-                    </div>
-                </header>
-
+                        <ul class="menu">
+                            <li class="menu-item"><Link to="/">Home</Link></li>
+                            <li class="menu-item"><Link to="/pastors">Pastors</Link></li>
+                            <li class="menu-item"><Link to="/sermons">Sermons</Link></li>
+                            <li class="menu-item"><Link to="/contribute">Contribute</Link></li>
+                            <li class="menu-item"><Link to="/events">Events</Link></li>
+                            <li class="menu-item"><img src={DiscordLogo} class="DiscordLogo" alt="Sign in with Discord"/><Link to="/api/discord_auth/login">Login</Link></li>
+                        </ul>
+                    </nav>
+            </header>
             <Switch>
+                <Route path="/"><Home /></Route>
                 <Route path="/pastors"><Pastors /></Route>
                 <Route path="/sermons"><Sermons /></Route>
                 <Route path="/contribute"><Contribute /></Route>
                 <Route path="/events"><Events /></Route>
+                {/* <Route path="/api/discord_auth/login"><DiscordAuth /></Route> */}
             </Switch>
         </Router>
     )
