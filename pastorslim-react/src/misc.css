@@ -1,0 +1,14 @@
+.Pastor {
+    width: 354px;
+    height: 280px;
+    transform: scaleX(-1);
+    position: center;
+  }
+
+.DiscordLogo {
+    width: 28px;
+    height: 28px;
+    float: 20px inline-start;
+    position: relative;
+}
+
