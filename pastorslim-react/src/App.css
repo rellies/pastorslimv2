@@ -1553,14 +1553,15 @@
    min-height: 150px; }
  
 .Pastor {
-    width: 177px;
-    height: 140px;
+    width: 25%;
+    height: 25%;
     transform: scaleX(-1);
     position: center;
   }
 
 .DiscordLogo {
-    width: 28px;
-    height: 28px;
-    float: 20px inline-start;
+    width: 30px;
+    height: 30px;
+    position: left;
+    float: inline-start;
 }

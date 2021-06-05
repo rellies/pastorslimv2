@@ -8,6 +8,9 @@ function Pastors() {
                     <div class="row">
                         <p>Lorem ipsum</p>
                     </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -35,7 +35,7 @@ function Header() {
                             <li class="menu-item"><Link to="/sermons">Sermons</Link></li>
                             <li class="menu-item"><Link to={"/contribute"}>Contribute</Link></li>
                             <li class="menu-item"><Link to="/events">Events</Link></li>
-                            <li class="menu-item"><img src={DiscordLogo} class="DiscordLogo" alt="Sign in with Discord"/><Link to="/api/discord_auth/login">Login</Link></li>
+                            <li class="menu-item"><img src={DiscordLogo} class="DiscordLogo" alt="Sign in with Discord" /><Link to="/api/discord_auth/login">Login</Link></li>
                         </ul>
                     </nav>
             </header>
