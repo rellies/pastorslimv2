@@ -3,7 +3,8 @@ import "./../App.css";
 
 function Home() {
     return (
-        <main class="main-content">
+        <>
+        <div class="main-content">
             <div class="fullwidth-block">
                 <div class="container">
                     <h2 class="section-title">Recent News</h2>
@@ -19,7 +20,8 @@ function Home() {
                     </div> 
                 </div> 
             </div>
-        </main>
+        </div>
+        </>
     )
 };
 

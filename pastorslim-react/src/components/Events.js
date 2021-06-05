@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Events() {
+    return (
     <main class="main-content">
         <div class="fullwidth-block">
             <div class="container">
@@ -110,6 +111,7 @@ function Events() {
             </div>
         </div>
 	</main>
+    )
 };
 
 export default Events;

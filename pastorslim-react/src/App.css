@@ -1178,10 +1178,10 @@
    text-align: center; }
    .branding .logo {
      margin-bottom: 10px; }
-   .branding .site-title {
+   .branding .header-title {
      color: #8f7655;
      font-size: 14px;
-     font-size: 2em; 
+     font-size: 1.5em; 
      position: center
    }
  

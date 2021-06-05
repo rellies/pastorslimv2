@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Sermons() {
-<main class="main-content">
+    return (
+    <div class="main-content">
         <div class="fullwidth-block">
             <div class="container">
                 <div class="row">
@@ -127,7 +128,8 @@ function Sermons() {
                 </div>
             </div>
         </div>
-	</main>
+	</div>
+    );
 }
 
 export default Sermons;

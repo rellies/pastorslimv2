@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contribute() {
     return (
-        <main class="main-content">
+        <div class="main-content">
 				<div class="fullwidth-block">
 					<div class="container">
 						<div class="row">
@@ -96,7 +96,7 @@ function Contribute() {
 						</div>
 					</div>
 				</div>
-			</main>
+			</div>
     );
 };
 
