@@ -24,10 +24,10 @@ function Header() {
             <header class="site-header">
                     <nav class="main-navigation">
                         <div class="container">
-                        <a href="#" class="branding">
+                        <Link to="/" class="branding">
                             <img src={Pastor} class="Pastor" alt="PastorPls" />
                             <h1 class="header-title">Pay your God Tax, ya he-bitch!</h1>
-                        </a>
+                        </Link>
                         </div>
                         <ul class="menu">
                             <li class="menu-item"><Link to="/">Home</Link></li>
