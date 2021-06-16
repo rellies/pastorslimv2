@@ -1206,8 +1206,11 @@
      .main-navigation .menu .menu-item {
        display: inline-block;
        margin: 0 10px; }
+       .main-navigation .menu .menu-item img {
+         display: inline-block;
+       }
        .main-navigation .menu .menu-item a {
-         display: block;
+         display: inline-block;
          padding: 20px 0;
          text-transform: uppercase;
          font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
@@ -1488,9 +1491,9 @@
      font-size: 1em;
      font-weight: 600; }
  
- .sidebar .widget {
+  .widget {
    margin-bottom: 40px; }
-   .sidebar .widget .widget-title {
+  .widget .widget-title {
      color: #544531;
      font-size: 18px;
      font-size: 1.2857142857em;
@@ -1562,6 +1565,11 @@
 .DiscordLogo {
     width: 30px;
     height: 30px;
-    position: left;
-    float: inline-start;
+    position: relative;
+}
+
+.WorshipBanner {
+  width: 50%;
+  height: 50%;
+  position: relative;
 }

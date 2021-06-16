@@ -26,7 +26,7 @@ function Header() {
                         <div class="container">
                         <Link to="/" class="branding">
                             <img src={Pastor} class="Pastor" alt="PastorPls" />
-                            <h1 class="header-title">Pay your God Tax, ya he-bitch!</h1>
+                            <h1 class="header-title">Don't forget to pay your God Tax, ya he-bitch!</h1>
                         </Link>
                         </div>
                         <ul class="menu">
